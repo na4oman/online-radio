@@ -5,20 +5,18 @@ import './Card.css'
 const Card = ({ item }) => {
   const [url, setUrl] = useState('')
 
+  const handleClick = e => {
+    setUrl(item.radio_url)
+  }
+
   return (
-    <div className='card'>
+    <div className={url === '' ? 'card' : 'card active'}>
       <div className='image'>
-        <img src={item.radio_image} alt='' />
+        <img src={item.radio_image} alt='' onClick={handleClick} />
       </div>
       <div className='info'>
         <h4 className='title'>{item.radio_name}</h4>
-        <ReactAudioPlayer
-          src={item.radio_url}
-          // autoPlay
-          controls
-          className='player'
-        />
-        {/* {url && <iframe src={url} title={item.radio_name}></iframe>} */}
+        <ReactAudioPlayer src={url} autoPlay controls className='player' />
         <span className='genre'>Genre: {item.genre}</span>
       </div>
     </div>
