@@ -1,0 +1,66 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  justify-content: stretch;
+  align-items: stretch;
+  background-color: #fcfcfc;
+  border: 2px solid transparent;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.card:has(:hover, :focus) {
+  background-color: #fafafa;
+  /* border: 2px solid #1dbf73; */
+  /* border: 2px solid black; */
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+.card:has(:focus) {
+  background-color: #fafafa;
+  /* border: 2px solid #1dbf73; */
+  border: 2px solid black;
+  border: 2px solid rgba(29, 80, 191, 0.3);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  box-shadow: 0 25px 50px -12px rgba(29, 80, 191, 0.3);
+}
+
+.image {
+  width: 250px;
+  height: 150px;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.info {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100px;
+}
+
+.title,
+.genre {
+  word-wrap: break-word;
+  font-size: 12px;
+}
+
+.genre {
+  font-weight: 500;
+}
+
+.player {
+  width: 100%;
+  margin-bottom: 1rem;
+  /* height: 100px; */
+}

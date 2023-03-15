@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 12px;
+  font-weight: 400;
+  color: #666;
+}
+
+.owner {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 5px;
+  font-size: 12px;
+  color: #666;
+  margin-top: -10px;
+}
+
+.owner-name {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.owner-name:hover {
+  transform: rotate(-15deg);
+  color: blue;
+}
