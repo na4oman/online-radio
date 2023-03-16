@@ -5,14 +5,18 @@
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  max-width: 87.5rem;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* gap: 3rem; */
+  /* max-width: 87.5rem; */
   padding: 12.5rem auto;
   margin-bottom: 50px;
   padding-top: 2rem;
-  position: relative;
+  /* position: relative; */
+}
+
+.main-title {
+  text-align: center;
 }
 
 @media screen and (max-width: 700px) {
@@ -23,25 +27,13 @@
     gap: 2rem;
   }
 
-  .cards {
-    max-width: 30rem;
-    align-items: center;
-  }
-
   .main-title {
     font-size: 20px;
     margin-bottom: -10px;
   }
 }
 
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  /* flex-direction: row; */
-  justify-content: center;
-  gap: 2rem;
-}
-
-.main-title {
-  text-align: center;
+.link {
+  text-decoration: none;
+  color: inherit;
 }

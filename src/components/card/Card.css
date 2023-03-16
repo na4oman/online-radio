@@ -12,20 +12,19 @@
 
 .card:has(:hover, :focus) {
   background-color: #fafafa;
-  /* border: 2px solid #1dbf73; */
-  /* border: 2px solid black; */
-  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
-    0 8px 10px -6px rgb(0 0 0 / 0.1);
   box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
 }
 
-.active {
+/* .card:has(:focus) {
   background-color: #fafafa;
-  /* border: 2px solid #1dbf73; */
-  border: 2px solid black;
   border: 2px solid rgba(29, 80, 191, 0.3);
-  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
-    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  box-shadow: 0 25px 50px -12px rgba(29, 80, 191, 0.3);
+} */
+
+.active,
+.card:has(:focus) {
+  background-color: #fafafa;
+  border: 2px solid rgba(29, 80, 191, 0.3);
   box-shadow: 0 25px 50px -12px rgba(29, 80, 191, 0.3);
 }
 
@@ -33,6 +32,22 @@
   width: 250px;
   height: 150px;
   cursor: pointer;
+  position: relative;
+}
+
+.fav-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 24px;
+  height: 24px;
+  color: lightgray;
+  /* color: rgb(241, 19, 226); */
+  cursor: pointer;
+}
+
+.fav-icon-active {
+  color: rgb(241, 19, 226);
 }
 
 img {
