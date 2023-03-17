@@ -20,10 +20,10 @@ const Search = ({ setFilter, setSelect }) => {
         />
         <select className='select' onChange={handleSelect}>
           <option value=''>--- Please choose a genre ---</option>
+          <option value='decades'>Decades</option>
           <option value='pop'>Pop</option>
           <option value='folk'>Pop Folk</option>
           <option value='rock'>Rock</option>
-          <option value='decades'>Decades</option>
           <option value='Hip Hop'>Hip Hop</option>
           <option value='talk'>Talk</option>
           <option value='dance'>Dance</option>
@@ -34,6 +34,18 @@ const Search = ({ setFilter, setSelect }) => {
           <option value='electronic'>Electronic</option>
           <option value='rnb'>RnB</option>
           <option value='Easy Listening'>Easy Listening</option>
+          <option value='country'>Country</option>
+          <option value='religion'>Religion</option>
+          <option value='community'>Community</option>
+          <option value='african'>African</option>
+          <option value='region'>Region</option>
+          <option value='latin'>Latin</option>
+          <option value='caribbean'>Caribbean</option>
+          <option value='theme'>Theme</option>
+          <option value='reggae'>Reggae</option>
+          <option value='other'>Other</option>
+          <option value='blues'>Blues</option>
+          <option value='indian'>Indian</option>
         </select>
       </div>
     </div>

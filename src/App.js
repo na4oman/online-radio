@@ -4,6 +4,8 @@ import Home from './pages/Home/Home'
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 import Favorite from './pages/Favorite/Favorite'
 import './App.css'
+import All from './pages/All/All'
+import UK from './pages/UK/UK'
 
 const Layout = () => {
   return (
@@ -30,6 +32,18 @@ const router = createBrowserRouter([
         path: '/fav',
         element: <Favorite />,
       },
+      {
+        path: '/all',
+        element: <All />,
+      },
+      {
+        path: '/uk',
+        element: <UK />,
+      },
+      // {
+      //   path: '/us',
+      //   element: <US />,
+      // },
     ],
   },
 ])
